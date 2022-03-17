@@ -38,3 +38,6 @@ ML 코딩테스트 및 알고리즘 스터디입니다.
 - `2022-03-19` [음양 더하기](https://programmers.co.kr/learn/courses/30/lessons/76501)
 - `2022-03-20` [내적](https://programmers.co.kr/learn/courses/30/lessons/70128)
 - `2022-03-21` [소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977)
+
+### Programmers Level-2
+- `2022-03-17` [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
