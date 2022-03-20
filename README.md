@@ -27,17 +27,37 @@ ML 코딩테스트 및 알고리즘 스터디입니다.
 <br />
 
 # ✅ History
+<details markdown="1">
+<summary><h3>2022-03-14 ~ 2022-03-20</h3></summary>
+  
 ### Programmers Level-1
-- `2022-03-12` [2022 카카오 블라인드>신고결과 받기](https://programmers.co.kr/learn/courses/30/lessons/92334)
-- `2022-03-13` [로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
-- `2022-03-14` [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
-- `2022-03-15` [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301)
-- `2022-03-16` [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
-- `2022-03-17` [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
-- `2022-03-18` [없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051)
-- `2022-03-19` [음양 더하기](https://programmers.co.kr/learn/courses/30/lessons/76501)
-- `2022-03-20` [내적](https://programmers.co.kr/learn/courses/30/lessons/70128)
-- `2022-03-21` [소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977)
-
+ - [2022 카카오 블라인드>신고결과 받기](https://programmers.co.kr/learn/courses/30/lessons/92334)
+ - [로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
+ - [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
+ - [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301)
+ - [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
+ - [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
+ - [없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051)
+ - [음양 더하기](https://programmers.co.kr/learn/courses/30/lessons/76501)
+ - [내적](https://programmers.co.kr/learn/courses/30/lessons/70128)
+ - [소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977)
 ### Programmers Level-2
-- `2022-03-17` [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
+ - [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
+</details>
+
+<details markdown="1">
+<summary><h3>2022-03-21 ~ 2022-03-27</h3></summary>
+
+### Programmers Level-1
+ - [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
+ - [k번째 수](https://programmers.co.kr/learn/courses/30/lessons/42748)
+ - [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
+ - [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
+ - [폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845)
+ - [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
+ - [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884)
+ - [3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
+ - [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
+ - [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
+### Programmers Level-2
+ - [오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
