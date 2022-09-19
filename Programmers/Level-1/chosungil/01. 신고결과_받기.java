@@ -118,3 +118,81 @@ class User {
         return bad_user_store;
     }
 }
+
+// ==================================================================================================================================
+// 2022/09/19 재풀이=================================================================================================================
+// ==================================================================================================================================
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Solution {
+    public int[] solution(String[] id_list, String[] report_list, int k) {
+        Map<String, Integer> userStore = getUserStore(id_list);
+        Map<String, List<String>> reportUserStore = getReportUserStore(userStore, report_list);
+        return getResult(id_list, userStore, reportUserStore, k);
+    }
+
+    // 전체 유저 저장소 생성
+    public Map<String, Integer> getUserStore(String[] id_list) {
+
+        Map<String, Integer> userStore = new HashMap<>();
+        Arrays.stream(id_list)
+                .forEach(id -> userStore.put(id, 0));
+
+        return userStore;
+    }
+
+    // 신고자 저장소 생성 및 신고 이력 저장
+    public Map<String, List<String>> getReportUserStore(Map<String, Integer> userStore, String[] report_list) {
+
+        // 신고 이력 중복 제거
+        report_list = Arrays.stream(report_list).distinct().toArray(String[]::new);
+
+        // key: 신고자, value: 신고자가 신고한 목록
+        Map<String, List<String>> reportUserStore = new HashMap<>();
+        for (int i = 0; i < report_list.length; i++) {
+            String reporter = report_list[i].split(" ")[0];
+            String target = report_list[i].split(" ")[1];
+
+            // 신고 당한 횟수 증가
+            userStore.put(target, userStore.get(target) + 1);
+
+            if (reportUserStore.containsKey(reporter)) {
+                reportUserStore.get(reporter).add(target);
+                continue;
+            }
+            reportUserStore.put(reporter, new ArrayList<>(Arrays.asList(target)));
+        }
+        return reportUserStore;
+    }
+
+    // 정답 구하기
+    public int[] getResult(
+            String[] id_list, Map<String, Integer> userStore,
+            Map<String, List<String>> reportUserStore, int k) {
+
+        int[] result = new int[id_list.length];
+
+        for (int i = 0; i < id_list.length; i++) {
+            List<String> targetList = reportUserStore.get(id_list[i]);
+            if (targetList == null)
+                continue;
+            result[i] = getMailCount(targetList, userStore, k);
+        }
+        return result;
+    }
+
+    // 신고자가 받게 될 메일 수 구하기
+    public int getMailCount(List<String> targetList, Map<String, Integer> userStore, int k) {
+        int mailCount = 0;
+        for (String target : targetList) {
+            if (userStore.get(target) >= k) {
+                mailCount++;
+            }
+        }
+        return mailCount;
+    }
+}
