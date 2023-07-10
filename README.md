@@ -7,10 +7,13 @@ ML 코딩테스트 및 알고리즘 스터디입니다.
 # ✅ 참여 방법
 
 1. 이 저장소를 `fork`한다.
-2. 생성된 원격저장소에 `본인 이름`으로 폴더를 생성한다.
-3. 생성된 폴더에 본인이 푼 문제의 소스코드를 업로드
-4. 소스 코드 업로드 후 `Pull Request`를 한다.
-5. 자유롭게 코드리뷰를 한다.
+2. 생성된 원격 저장소에 `본인 이름`으로 폴더를 생성한다.
+3. 본인 이름으로 `Local branch` 를 생성한다. ex) git branch csi
+4. 생성한 local branch를 `체크아웃` 한 뒤 문제를 푼다. ex) git checkout csi
+5. 문제를 다 풀었으면 `커밋` 을 한다.
+6. Local branch명과 동일한 `remote branch` 에 `push` 를 한다. ex) git push origin csi
+7. 원격 저장소에 가서 `Pull Request`를 생성한다.
+8. 자유롭게 코드리뷰를 한다.
 
 # ✅ 일주일 사이클
 
