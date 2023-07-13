@@ -42,7 +42,7 @@ public class 체육복 {
             for (int lostStu : lost) {
                 if (lostStu != -3) answer--;
             }
-            System.out.println("answer = " + answer);
+
             return answer;
         }
     }
