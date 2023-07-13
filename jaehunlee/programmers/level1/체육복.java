@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class 체육복 {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        solution.solution(5, new int[]{1, 5}, new int[]{1, 3}); // 5
+        solution.solution(5, new int[]{1, 5}, new int[]{1, 3});
     }
 
     static class Solution {
