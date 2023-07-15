@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
@@ -7,8 +6,6 @@ public class 큰_수_만들기 {
         Solution solution = new Solution();
         String solution1 = solution.solution("4321", 1);
         System.out.println(solution1);
-
-
     }
 
     static class Solution {
@@ -51,7 +48,5 @@ public class 큰_수_만들기 {
             }
             return stack.stream().map(String::valueOf).collect(Collectors.joining(""));
         }
-
-
     }
 }
