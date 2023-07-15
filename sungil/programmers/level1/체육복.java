@@ -1,6 +1,16 @@
+package sungil.programmers.level1;
+
 import java.util.HashMap;
 
-class Solution {
+public class 체육복 {
+
+    public static void main(String[] args) {
+        체육복 s = new 체육복();
+        System.out.println("1번 테스트 케이스 : " + (s.solution(5, new int[]{2, 4}, new int[]{1, 3, 5}) == 5));
+        System.out.println("2번 테스트 케이스 : " + (s.solution(5, new int[]{2, 4}, new int[]{3}) == 4));
+        System.out.println("3번 테스트 케이스 : " + (s.solution(3, new int[]{3}, new int[]{1}) == 2));
+    }
+
     public int solution(int n, int[] lost, int[] reserve) {
 
         HashMap<Integer, Integer> map = new HashMap();
