@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="level0">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/hoecheol/programmers/level0" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$/hoecheol/programmers/level0" />
+    </excluded>
+  </library>
+</component>
