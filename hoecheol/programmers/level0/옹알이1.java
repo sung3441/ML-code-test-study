@@ -1,7 +1,7 @@
 import java.util.*;
+class 옹알이 {
 
-class Solution {
-    public int 옹알이1 (String[] babbling) {
+    public int solution (String[] babbling) {
         int answer = 0;
         String[] announce = {"aya", "ye", "woo", "ma"};
 
