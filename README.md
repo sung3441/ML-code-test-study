@@ -38,7 +38,7 @@ ML 코딩테스트 및 알고리즘 스터디입니다.
   3. [큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
 </details>
 <details>
-  <summary>23년 7월 3주차 - 누적합 ()</summary>
+  <summary>23년 7월 3주차 - 누적합 (Prefix sum)</summary>
   
   1. [구간 합 구하기](https://www.acmicpc.net/problem/11659)
   2. [컬러볼](https://www.acmicpc.net/problem/10800)
