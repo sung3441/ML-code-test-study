@@ -27,3 +27,21 @@ ML 코딩테스트 및 알고리즘 스터디입니다.
 - 본인의 이름 폴더 안에 소스코드 업로드  
 - ex) [프로그래머스] 신규 아이디 추천 ->`/ML-code-test-study/sungil/programmers/level1/신규 아이디.java`
 - ex) [백준] 1191번 -> `/ML-code-test-study/sungil/baekjoon/silver/1191.java`
+
+# ✅ 문제 현황
+
+<details>
+  <summary>23년 7월 2주차 - 탐욕 (Greedy)</summary>
+    
+  1. [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862)
+  2. [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
+  3. [큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
+</details>
+<details>
+  <summary>23년 7월 3주차 - 누적합 ()</summary>
+  
+  1. [구간 합 구하기](https://www.acmicpc.net/problem/11659)
+  2. [컬러볼](https://www.acmicpc.net/problem/10800)
+  3. [파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
+  4. [[Optional] 광고 삽입](https://school.programmers.co.kr/learn/courses/30/lessons/72414)
+</details>
