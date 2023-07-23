@@ -8,44 +8,50 @@ public class 컬러볼 {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int a = Integer.valueOf(st.nextToken());
-        List<Ball> ballList = new ArrayList<>();
-        for (int i = 0; i < a; i++) {
+        List<Ball> ballList = new LinkedList<>();
+        int[] sizeArr = new int[a+2];
+
+        Comparator<Ball> ballSizeSort = Comparator.comparingInt(Ball::getSize);
+        Comparator<Ball> ballIdxSort = Comparator.comparingInt(Ball::getIdx);
+
+        for (int i = 1; i <= a; i++) {
             st = new StringTokenizer(br.readLine());
             int color = Integer.valueOf(st.nextToken());
             int size = Integer.valueOf(st.nextToken());
-            ballList.add(new Ball(color, size, 0));
-            int zero = 0;
-            for (int j = zero; j < ballList.size(); j++) {
-                Ball ball = ballList.get(j);
-                if (ball.getColor() != color && ball.getSize() > size) {
-                    ball.setCatchValue(ball.getCatchValue() + size);
-                }
-            }
+            Ball ball = new Ball(i, color, size);
+            ballList.add(ball);
         }
-        for (int i = 0; i < ballList.size(); i++) {
-            System.out.println(ballList.get(i).getCatchValue());
+
+        ballList.sort(ballSizeSort);
+
+        int totalSize = 0;
+        for (Ball ball : ballList) {
+            int ballColor = ball.getColor();
+            int ballSize = ball.getSize();
+            ball.setResult(totalSize - sizeArr[ballColor]);
+            totalSize += ballSize;
+            sizeArr[ballColor] += ballSize;
         }
+
+        ballList.sort(ballIdxSort);
+        ballList.forEach(it -> System.out.println(it.getResult()));
 
     }
 
     static class Ball {
+        int idx;
         int color;
         int size;
-        int catchValue;
+        int result;
 
-        @Override
-        public String toString() {
-            return "Ball{" +
-                    "color=" + color +
-                    ", size=" + size +
-                    ", catchValue=" + catchValue +
-                    '}';
-        }
-
-        Ball(int color, int size, int catchValue) {
+        public Ball(int idx, int color, int size) {
+            this.idx = idx;
             this.color = color;
             this.size = size;
-            this.catchValue = catchValue;
+        }
+
+        public int getIdx() {
+            return idx;
         }
 
         public int getColor() {
@@ -56,12 +62,12 @@ public class 컬러볼 {
             return size;
         }
 
-        public int getCatchValue() {
-            return catchValue;
+        public int getResult() {
+            return result;
         }
 
-        public void setCatchValue(int catchValue) {
-            this.catchValue = catchValue;
+        public void setResult(int result) {
+            this.result = result;
         }
     }
 
