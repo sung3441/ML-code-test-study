@@ -7,14 +7,14 @@ public class 컬러볼 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int a = Integer.valueOf(st.nextToken());
+        int N = Integer.valueOf(st.nextToken());
         List<Ball> ballList = new LinkedList<>();
-        int[] sizeArr = new int[a+2];
+        int[] colors = new int[N+1];
+        int[] answer = new int[N+1];
 
         Comparator<Ball> ballSizeSort = Comparator.comparingInt(Ball::getSize);
-        Comparator<Ball> ballIdxSort = Comparator.comparingInt(Ball::getIdx);
 
-        for (int i = 1; i <= a; i++) {
+        for (int i = 1; i <= N; i++) {
             st = new StringTokenizer(br.readLine());
             int color = Integer.valueOf(st.nextToken());
             int size = Integer.valueOf(st.nextToken());
@@ -24,17 +24,7 @@ public class 컬러볼 {
 
         ballList.sort(ballSizeSort);
 
-        int totalSize = 0;
-        for (Ball ball : ballList) {
-            int ballColor = ball.getColor();
-            int ballSize = ball.getSize();
-            ball.setResult(totalSize - sizeArr[ballColor]);
-            totalSize += ballSize;
-            sizeArr[ballColor] += ballSize;
-        }
-
-        ballList.sort(ballIdxSort);
-        ballList.forEach(it -> System.out.println(it.getResult()));
+        Arrays.stream(answer).skip(1).forEach(System.out::println);
 
     }
 
