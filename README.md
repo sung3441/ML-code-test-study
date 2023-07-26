@@ -45,3 +45,11 @@ ML 코딩테스트 및 알고리즘 스터디입니다.
   3. [파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
   4. [[Optional] 광고 삽입](https://school.programmers.co.kr/learn/courses/30/lessons/72414)
 </details>
+<details>
+  <summary>23년 7월 4주차 - 구현 (Implementation)</summary>
+  
+  1. [킹](https://www.acmicpc.net/problem/1063)
+  2. [치킨 배달](https://www.acmicpc.net/problem/15686)
+  3. [스킬트리](https://school.programmers.co.kr/learn/courses/30/lessons/49993)
+  4. [[Optional] 타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
+</details>
