@@ -4,19 +4,18 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
-
 	public static class Ball implements Comparable<Ball>{
 		int size;
 		int color;
 		
-        public Ball(int color, int size) {
-            this.color = color;
-            this.size = size;
-        }
-        @Override
-        public int compareTo(Ball nextBall) {
-        	return Integer.compare(this.size, nextBall.size);
-        }
+	        public Ball(int color, int size) {
+	            this.color = color;
+	            this.size = size;
+	        }
+	        @Override
+	        public int compareTo(Ball nextBall) {
+	        	return Integer.compare(this.size, nextBall.size);
+	        }
 	}
 	
 	public static void main(String[] args) {
@@ -30,8 +29,8 @@ public class Main {
 		HashMap<Integer,ArrayList<Integer>> ballMap = new HashMap<>();
 		HashMap<Integer,ArrayList<Integer>> ballAccMap = new HashMap<>();
 		
-    	for(int i =0;i < ballCnt;i++) {
-    		int color = sc.nextInt();
+	    	for(int i =0;i < ballCnt;i++) {
+	    		int color = sc.nextInt();
 			int size = sc.nextInt();
 			balls[i] = new Ball(color,size);
 			ballList[i] = size+"-"+color;
@@ -40,12 +39,12 @@ public class Main {
 				ballAccMap.put(color, new ArrayList<Integer>(Arrays.asList(0)));
 				ballMap.put(color, new ArrayList<Integer>(Arrays.asList(0)));
 			}
-    	}
+	    	}
 
-    	// 사이즈 기준 sort 
-    	Arrays.sort(balls); 
-
-    	int sum = 0;
+		// 사이즈 기준 sort 
+		Arrays.sort(balls); 
+		
+		int sum = 0;
 		for(int i=0;i<balls.length;i++) {
 			int size = balls[i].size;
 			int color = balls[i].color;
